@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directives-pipes-app';
+  public loremValue = 'lorem ipsum';
+  public loremValue2 = 'LOREM IPSUM';
+  public jsonObject = {
+    propeties: 'lorem'
+  };
+  public currencyValue = 6;
+  public birthday = Date.now();
+  public isAutenticated = false;
+  public persons: string[] = ['Adam Kowalski', 'Marcin Janiak', 'Robert Lewandowski'];
+  public lorem = 'lorem-ipsum-blable';
 }
